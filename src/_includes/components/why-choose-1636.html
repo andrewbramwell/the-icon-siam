@@ -1,0 +1,39 @@
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-1636">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">About Us</span>
+                <h2 class="cs-title">Bringing Authentic Thai Healing Traditions to North West London Since 2019</h2>
+            </div>
+            <div class="cs-flex">
+                <h3 class="cs-h3">
+                    Expert Thai Therapists Trained in Thailand with UK Accreditations
+                </h3>
+                <p class="cs-text">
+                    Founded by Nadia from Udon Thani, Thailand, Siam Thai Spa brings authentic healing traditions to Cricklewood. Our qualified therapists blend traditional Thai techniques with modern therapeutic approaches to effectively address chronic pain and mobility issues. With extensive training in Thailand and recognised UK accreditations, we deliver personalised treatments that consistently exceed expectations, as reflected in our numerous positive reviews.
+                </p>
+                <a href="/about/" class="cs-button-solid">About Us</a>
+            </div>
+        </div>  
+        <picture class="cs-picture">
+            <!--Mobile Image -->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about-us.jpg" | resize({width: 576, height: 576}) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about-us.jpg" | resize({width: 576, height: 576}) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about-us.jpg" | resize({width: 576, height: 576}) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image -->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/about-us.jpg" | resize({width: 1982, height: 922}) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/about-us.jpg" | resize({width: 1982, height: 922}) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/about-us.jpg" | resize({width: 1982, height: 922}) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image -->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/about-us.jpg" | resize({width: 2560, height: 1240}) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/about-us.jpg" | resize({width: 2560, height: 1240}) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/about-us.jpg" | resize({width: 2560, height: 1240}) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/about-us.jpg" | resize({width: 2560, height: 1240}) | jpeg %}" alt="massage oils and towels" width="1280" height="620" loading="lazy" decoding="async">
+        </picture>
+    </div>
+</section>
+                                

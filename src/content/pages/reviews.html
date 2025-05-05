@@ -1,0 +1,112 @@
+---
+title: 'Reviews | Siam Thai Spa'
+description:  " Read what our clients say about Siam Thai Spa in Cricklewood. Discover how our authentic Thai massage treatments have helped relieve pain and improve wellbeing. "
+permalink: 'reviews/'
+eleventyNavigation:
+    key: Reviews
+    order: 400
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/reviews.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner.jpg" | resize({width: 2560, height: 1136}) | avif %}">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                  Reviews                     -->
+    <!-- ============================================ -->
+
+    <section id="reviews">
+        <div class="container">
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    I'm delighted to share my praise for Siam Thai Spa The rooms are nice and clean, and the therapists' techniques worked wonders in relieving my shoulder and neck pain, as well as lower back pain. Definitely worth a try!
+                </p>
+                <div class="star-group">
+                    <span class="name">Janice Lee</span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    I had deep tissue thai massage and Ben she gave me extraordinary fantastic massage. She knew what she was doing. Im definitely coming back again.
+                </p>
+                <div class="star-group">
+                    <span class="name">Mohamed Ahmed</span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    Great massage by Pinky, the staff listen to what areas you would like them to work on. My shoulder feels better already. Very clean and tidy with a friendly atmosphere.
+                </p>
+                <div class="star-group">
+                    <span class="name">Simon Day</span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    Went in without being able to move my neck, came out perfectly fine! The masseuse completely understood my problem and went for it, they are always a great help!
+                </p>
+                <div class="star-group">
+                    <span class="name">Mari Pezz</span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    Had a wonderful full body Thai massage here yesterday. Worked out all the aches I had in my neck/shoulders/back. Body feels much more relaxed and had a good night's sleep.
+                </p>
+                <div class="star-group">
+                    <span class="name">Cyn Dee</span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    Excellent Thai massage. Hit all the right places and left me feeling loosened, relaxed and refreshed. Professional thorough service.
+                </p>
+                <div class="star-group">
+                    <span class="name">Brian Crossland</span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

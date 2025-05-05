@@ -1,0 +1,469 @@
+
+/*-- -------------------------- -->
+<---    Featured Service 1      -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #sbs-867 {
+        padding: var(--sectionPadding);
+        background-color: #f7f7f7;
+
+        .cs-container {
+            width: 100%;
+            /* changes to 1280px at desktop */
+            max-width: (550/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 7vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text aling to left if content needs to be left aligned */
+            text-align: left;
+            width: 100%;
+            max-width: (542/16rem);
+            /* prevents padding from affecting width and height */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: flex-start;
+        }
+
+        .cs-title {
+            /* 17 characters wide including spaces */
+            max-width: 17ch;
+        }
+
+        .cs-text {
+            margin-bottom: (16/16rem);
+            &:last-of-type {
+                margin-bottom: (32/16rem);
+            }
+        }
+
+        .cs-picture {
+            display: block;
+            position: relative;
+            width: 100%;
+            max-width: (630/16rem);
+            /* 400px - 775px */
+            height: clamp(25rem, 70vw, 48.4375rem);
+            overflow: hidden;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 64rem) {
+    #sbs-867 {
+        padding: var(--sectionPadding);
+
+        .cs-container {
+            flex-direction: row;
+            max-width: (1280/16rem);
+            justify-content: space-between;
+        }
+
+        .cs-content {
+            width: 53%;
+            /* reset the padding, add the section padding back to the section container */
+            padding: 0;
+        }
+
+        .cs-picture {
+            width: 47vw;
+            position: relative;
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #sbs-867 {
+            background-color: rgba(0, 0, 0, .2);
+            .cs-topper {
+                color: var(--primaryLight);
+            }
+
+            .cs-title,
+            .cs-text {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-text {
+                opacity: 0.8;
+            }
+
+            .cs-picture {
+                &:before {
+                    background-color: var(--accent);
+                }
+            }
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---     Featured Service 2     -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #sbs-r-870 {
+        padding: var(--sectionPadding);
+        background-color: #f7f7f7;
+
+        .cs-container {
+            width: 100%;
+            /* changes to 1280px at desktop */
+            max-width: (550/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 7vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: left;
+            width: 100%;
+            max-width: (542/16rem);
+            /* prevents padding from affecting width and height */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: flex-start;
+        }
+
+        .cs-title {
+            /* 17 characters wide including spaces */
+            max-width: 17ch;
+        }
+
+        .cs-text {
+            margin-bottom: (16/16rem);
+            &:last-of-type {
+                margin-bottom: (32/16rem);
+            }
+        }
+
+        .cs-picture {
+            display: block;
+            position: relative;
+            width: 100%;
+            max-width: (630/16rem);
+            /* 400px - 775px */
+            height: clamp(25rem, 70vw, 48.4375rem);
+            overflow: hidden;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #sbs-r-870 {
+        padding: var(--sectionPadding);
+
+        .cs-container {
+            flex-direction: row;
+            max-width: (1280/16rem);
+            justify-content: space-between;
+        }
+
+        .cs-content {
+            width: 53%;
+            /* reset the padding, add the section padding back to the section container */
+            padding: 0;
+            /* sends it to the left in the 1st position */
+            order: -1;
+        }
+
+        .cs-picture {
+            width: 47vw;
+            position: relative;
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #sbs-r-870 {
+            background-color: rgba(0, 0, 0, .2);
+            .cs-topper {
+                color: var(--primaryLight);
+            }
+
+            .cs-title,
+            .cs-text {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-text {
+                opacity: 0.8;
+            }
+
+            .cs-picture {
+                &:before {
+                    background-color: var(--accent);
+                }
+            }
+        }
+    }
+}
+
+/* Mobile - 360px */
+/* you can copy and paste these styles into the section CSS where you placed the #list-1405 HTML, or you can place it in your global stylesheet so you can reuse the HTML in any Side By Side section on your site. That way when you make changes to it, it will also change everywhere in the site */
+@media only screen and (min-width: 0rem) {
+    #list-1405 {
+        width: 100%;
+        margin: 0 0 (24/16rem) 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: (12/16rem);
+
+        .cs-li {
+            font-size: var(--bodyFontSize);
+            list-style: none;
+            line-height: 1.5em;
+            width: 100%;
+            color: var(--bodyTextColor);
+            display: flex;
+            justify-content: flex-start;
+            /* push icon top the top so if the list item goes to two lines the icon stays at the top */
+            align-items: flex-start;
+            gap: (8/16rem);
+        }
+
+        .cs-icon {
+            width: (24/16rem);
+            height: auto;
+            /* adds extra space between the icon and top of parent so it's more centered */
+            margin-top: 1px;
+            display: block;
+        }
+    }
+}
+
+/* Dark Mode, copy and paste only the styles inside the #list-1405 brackets into your section's dark mode media query */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #list-1405 {
+            .cs-li {
+                color: var(--bodyTextColorWhite);
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---        Reviews 1395        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #reviews-1395 {
+        /* centers the button */
+        text-align: center;
+        padding: var(--sectionPadding);
+        /* clips the orbs from causing overflow issues */
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+
+        .cs-container {
+            width: 100%;
+            /* changes to 1024px at tablet */
+            max-width: (584/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: center;
+        }
+
+        .cs-title {
+            max-width: 20ch;
+            margin: 0;
+        }
+
+        .cs-card-group {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            /* 16px - 20px */
+            gap: clamp(1rem, 2.5vw, 1.15rem);
+        }
+
+        .cs-item {
+            list-style: none;
+            text-align: left;
+            /* 20px - 60px */
+            padding: clamp(1rem, 4vw, 3.75rem);
+            background-color: #f7f7f7;
+            /* 12px - 24px */
+            /* prevents padding from adding to height and width */
+            box-sizing: border-box;
+            /* clips the pseudo box from overflowing */
+            overflow: hidden;
+            display: flex;
+            grid-column: span 12;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            position: relative;
+            z-index: 1;
+
+            
+        }
+
+        .cs-quote {
+            /* 72px - 120px */
+            width: clamp(4.5rem, 10vw, 7.5rem);
+            height: auto;
+            /* 32px - 64px */
+            margin-bottom: clamp(2rem, 6vw, 4rem);
+            display: block;
+        }
+
+        .cs-item-text {
+            /* 16px - 25px */
+            font-size: clamp(1rem, 2.6vw, 1.5625rem);
+            line-height: 1.2em;
+            font-style: italic;
+            margin: 0;
+            /* 24px - 64px */
+            margin-bottom: clamp(1.5rem, 6vw, 4rem);
+            color: var(--bodyTextColor);
+        }
+
+        .cs-flex-group {
+            /* in case one card has more text than the other, this pushes up against the review text so the name and title are always at the bottom. Only works if parent is a flexbox */
+            margin-top: auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            /* 8px - 24px */
+            gap: clamp(0.8rem, 1.5vw, 1rem);
+        }
+
+        .cs-name {
+            /* 16px - 25px */
+            font-size: clamp(1rem, 2.5vw, 1.5625rem);
+            line-height: 1.2em;
+            font-weight: 500;
+            margin: 0;
+            color: var(--headerColor);
+            display: block;
+        }
+
+        .cs-job {
+            /* 14px - 16px */
+            font-size: clamp(0.875rem, 1.5vw, 1rem);
+            line-height: 1.5em;
+            font-weight: 400;
+            margin: 0;
+            color: #746f95;
+            display: block;
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #reviews-1395 {
+        .cs-container {
+            max-width: (1280/16rem);
+        }
+
+        .cs-item {
+            grid-column: span 6;
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #reviews-1395 {
+            .cs-title {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-item {
+                background-color: var(--medium);
+            }
+
+            .cs-quote {
+                opacity: 0.5;
+            }
+
+            .cs-item-text,
+            .cs-name {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-job {
+                color: var(--bodyTextColorWhite);
+                opacity: 0.7;
+            }
+        }
+    }
+}
+                                
+
+
+
+                                
+
+                                
+
+                                
+
+                                
+
+                                
+                                

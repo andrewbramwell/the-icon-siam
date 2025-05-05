@@ -1,0 +1,33 @@
+
+<!-- ============================================ -->
+<!--                     CTA                      -->
+<!-- ============================================ -->
+
+<section id="cta-51">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Wellness Awaits</span>
+            <h2 class="cs-title">Begin Your Wellness Journey Now</h2>
+            <p class="cs-text">
+                Transform how you feel with our authentic Thai massage therapy. Contact our Cricklewood spa today to schedule your personalised treatment session.
+            </p>
+            <a href="{{client.onlineBooking}}" target="_blank" rel="noopener" class="cs-button-solid">Book Now</a>
+        </div>
+    </div>
+    <!-- Background Image-->
+    <picture class="cs-picture">
+        <!--Mobile Image -->
+        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({width: 760, height: 808}) | avif %}" type="image/avif">
+        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({width: 760, height: 808}) | webp %}" type="image/webp">
+        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({width: 760, height: 808}) | jpeg %}" type="image/jpeg">
+        <!--Tablet Image -->
+        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({width: 2046, height: 767}) | avif %}" type="image/avif">
+        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({width: 2046, height: 767}) | webp %}" type="image/webp">
+        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({width: 2046, height: 767}) | jpeg %}" type="image/jpeg">
+        <!--Desktop Image -->
+        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({width: 1920, height: 434}) | avif %}" type="image/avif">
+        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({width: 1920, height: 434}) | webp %}" type="image/webp">
+        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({width: 1920, height: 434}) | jpeg %}" type="image/jpeg">
+        <img src="{% getUrl "/assets/images/banner.jpg" | resize({width: 1920, height: 434}) | jpeg %}" alt="massage oils" width="1920" height="434" loading="lazy" decoding="async" aria-hidden="true">
+    </picture>
+</section>

@@ -1,0 +1,34 @@
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-2151">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Siam Thai Spa</span>
+            <h2 class="cs-title">Experience Expert Massage in Cricklewood, North West London</h2>
+            <p class="cs-text">
+                Escape to a world of authentic Thai healing in North West London. Our experienced therapists deliver therapeutic treatments that ease chronic pain, reduce stress, and restore overall wellbeing.
+            </p>
+            <a href="{{client.onlineBooking}}" target="_blank" rel="noopener" class="cs-button-solid">Book An Appointment</a>
+        </div>
+        <picture class="cs-background">
+            <!--Mobile Image -->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero-4.jpg" | resize({width: 640, height: 640}) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero-4.jpg" | resize({width: 640, height: 640}) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero-4.jpg" | resize({width: 640, height: 640}) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image -->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hero-4.jpg" | resize({width: 2046, height: 952}) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hero-4.jpg" | resize({width: 2046, height: 952}) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hero-4.jpg" | resize({width: 2046, height: 952}) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image -->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hero-4.jpg" | resize({width: 1920, height: 1714}) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hero-4.jpg" | resize({width: 1920, height: 1714}) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hero-4.jpg" | resize({width: 1920, height: 1714}) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/hero-4.jpg" | resize({width: 1920, height: 1714}) | jpeg %}" alt="image description" width="960" height="857" decoding="async" aria-hidden="true">
+        </picture>
+    </div>
+</section>
+
+
+                                

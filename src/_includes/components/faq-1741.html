@@ -1,0 +1,81 @@
+<!-- ============================================ -->
+<!--                    FAQ                       -->
+<!-- ============================================ -->
+
+<section id="faq-1741">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">FAQs</span>
+            <h2 class="cs-title">Common Questions About Our Spa & Services</h2>
+            <a href="/contact/" class="cs-button-solid">
+                Ask Another Question
+            </a>
+        </div>
+        <div class="cs-flex-group">
+            <ul class="cs-faq-group">
+                <!-- Active class added as default -->
+                <li class="cs-faq-item active">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Is massage suitable for everyone?
+                        </span>
+                    </button>
+                    <p class="cs-item-text">
+                        While beneficial for many, massage isn't recommended for certain conditions. Please inform us of health concerns, especially pregnancy or recent injuries.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How often should I get a massage?
+                        </span>
+                    </button>
+                    <p class="cs-item-text">
+                        For therapeutic benefits, weekly sessions initially are recommended, gradually decreasing as improvement occurs. We'll create a personalised plan.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What are your payment options?
+                        </span>
+                    </button>
+                    <p class="cs-item-text">
+                        We accept cash, major credit/debit cards, and contactless payments. Gift vouchers are also available for purchase.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Is parking available nearby?
+                        </span>
+                    </button>
+                    <p class="cs-item-text">
+                        Paid street parking is available directly outside our spa, with free parking after 6 PM. Several bus routes also stop within walking distance. 
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What facilities do you have?
+                        </span>
+                    </button>
+                    <p class="cs-item-text">
+                        Our spa offers clean toilet amenities, shower facilities, and comfortable treatment rooms. Complimentary water is provided after every session. 
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<script>
+    const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+for (const item of faqItems) {
+    const onClick = () => {
+        item.classList.toggle('active');
+    };
+    item.addEventListener('click', onClick);
+}                    
+</script>
+                                

@@ -1,0 +1,44 @@
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1519">
+    <div class="cs-container">
+        {% if eleventyNavigation and eleventyNavigation.key %}
+            <span class="cs-int-title">{{eleventyNavigation.key}}</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="{{ page.url }}" class="cs-link cs-active">{{eleventyNavigation.key}}</a>
+            </div>
+        {% else %}
+            <!-- Fallback for pages without eleventyNavigation -->
+            <span class="cs-int-title">{{ title | default(page.fileSlug) }}</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="{{ page.url }}" class="cs-link cs-active">{{ title | default(page.fileSlug) }}</a>
+            </div>
+        {% endif %}
+    </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image -->
+        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({width: 640, height: 728}) | avif %}" type="image/avif">
+        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({width: 640, height: 728}) | webp %}" type="image/webp">
+        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({width: 640, height: 728}) | jpeg %}" type="image/jpeg">
+        <!--Tablet Image -->
+        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({width: 2046, height: 963}) | avif %}" type="image/avif">
+        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({width: 2046, height: 963}) | webp %}" type="image/webp">
+        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({width: 2046, height: 963}) | jpeg %}" type="image/jpeg">
+        <!--Desktop Image -->
+        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({width: 2560, height: 1136}) | avif %}" type="image/avif">
+        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({width: 2560, height: 1136}) | webp %}" type="image/webp">
+        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({width: 2560, height: 1136}) | jpeg %}" type="image/jpeg">
+        <img src="{% getUrl "/assets/images/banner.jpg" | resize({width: 2560, height: 1136}) | jpeg %}" alt="massage" width="1280" height="568" loading="lazy" decoding="async" aria-hidden="true">
+    </picture>
+    <svg class="cs-mask" xmlns="http://www.w3.org/2000/svg" width="1920" height="136" viewBox="0 0 1920 136" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 136V0C1803.21 45.3334 1445.52 136 951 136C456.485 136 111.116 45.3334 0 0V136H951H1920Z" fill="var(--maskBG)"/>
+    </svg>
+</div>
+                                

@@ -1,0 +1,134 @@
+<!-- ============================================ -->
+<!--                 Why Choose Us                -->
+<!-- ============================================ -->
+
+<section id="why-choose-1824">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/why-us.jpg" | resize({width: 576, height: 800}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/why-us.jpg" | resize({width: 576, height: 800}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/why-us.jpg" | resize({width: 576, height: 800}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/why-us.jpg" | resize({width: 1982, height: 1360}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/why-us.jpg" | resize({width: 1982, height: 1360}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/why-us.jpg" | resize({width: 1982, height: 1360}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/why-us.jpg" | resize({width: 1044, height: 1426}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/why-us.jpg" | resize({width: 1044, height: 1426}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/why-us.jpg" | resize({width: 1044, height: 1426}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/why-us.jpg" | resize({width: 1044, height: 1426}) | jpeg %}" alt="herbal compress and massage oils" width="522" height="713" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Why Us</span>
+            <h2 class="cs-title">Why Choose Siam Thai Spa?</h2>
+        </div>
+        <div class="cs-flex">
+            <div class="cs-box">
+                <div class="cs-box-content" data-box="one">
+                    <img class="cs-box-icon" loading="lazy" decoding="async" src="/assets/svgs/lotus-g.svg" alt="icon" width="62" height="62">
+                    <h3 class="cs-h3">Authentic Thai Expertise</h3>
+                    <p class="cs-box-text">
+                        Experience genuine Thai massage from therapists trained in Thailand. Our practitioners bring traditional techniques directly from Udon Thani, delivering truly authentic treatments.
+                    </p>
+                </div>
+                <div class="cs-box-content cs-hidden" data-box="two">
+                    <img class="cs-box-icon" loading="lazy" decoding="async" src="/assets/svgs/woman-g.svg" alt="icon" width="62" height="62">
+                    <h3 class="cs-h3">Personalised Treatment Approach</h3>
+                    <p class="cs-box-text">
+                        We carefully listen to your concerns and tailor every treatment to address your specific needs rather than offering generic sessions. Your unique requirements receive targeted attention.
+                    </p>
+                </div>
+                <div class="cs-box-content cs-hidden" data-box="three">
+                    <img class="cs-box-icon" loading="lazy" decoding="async" src="/assets/svgs/qualified-g.svg" alt="icon" width="62" height="62">
+                    <h3 class="cs-h3">Qualified Professional Therapists</h3>
+                    <p class="cs-box-text">
+                        Our team holds recognised qualifications from both Thailand and the UK, including VTCT Level 3 certification. Every treatment is delivered with professional skill and anatomical knowledge.
+                    </p>
+                </div>
+                <div class="cs-box-content cs-hidden" data-box="four">
+                    <img class="cs-box-icon" loading="lazy" decoding="async" src="/assets/svgs/money-g.svg" alt="icon" width="62" height="62">
+                    <h3 class="cs-h3">Exceptional Value for Money</h3>
+                    <p class="cs-box-text">
+                        While maintaining competitive pricing, we ensure each session delivers maximum therapeutic benefit. Our excellent value keeps clients returning regularly for effective treatments.
+                    </p>
+                </div>
+            </div>
+            <div class="cs-button-group">
+                <button class="cs-button cs-active" data-filter="one">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/lotus.svg" alt="icon" width="32" height="32">
+                    </picture>
+                    <span class="cs-button-text">Authentic Thai Expertise</span>
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="/assets/svgs/arrow.svg" alt="icon" width="32" height="32">
+                </button>
+                <button class="cs-button" data-filter="two">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/woman.svg" alt="icon" width="32" height="32">
+                    </picture>
+                    <span class="cs-button-text">Personalised Treatment Approach</span>
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="/assets/svgs/arrow.svg" alt="icon" width="32" height="32">
+                </button>
+                <button class="cs-button" data-filter="three">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/qualified.svg" alt="icon" width="32" height="32">
+                    </picture>
+                    <span class="cs-button-text">Qualified Professional Therapists</span>
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="/assets/svgs/arrow.svg" alt="icon" width="32" height="32">
+                </button>
+                <button class="cs-button" data-filter="four">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/money.svg" alt="icon" width="32" height="32">
+                    </picture>
+                    <span class="cs-button-text">Exceptional Value for Money</span>
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="/assets/svgs/arrow.svg" alt="icon" width="32" height="32">
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('#why-choose-1824 .cs-button');
+    const boxContents = document.querySelectorAll('#why-choose-1824 .cs-box-content');
+
+    // Function to show the corresponding box content and hide others
+    function showBoxContent(button) {
+        const filterValue = button.getAttribute('data-filter');
+
+        boxContents.forEach(box => {
+            if (box.getAttribute('data-box') === filterValue) {
+                box.classList.remove('cs-hidden');
+            } else {
+                box.classList.add('cs-hidden');
+            }
+        });
+
+        buttons.forEach(btn => {
+            if (btn === button) {
+                btn.classList.add('cs-active');
+            } else {
+                btn.classList.remove('cs-active');
+            }
+        });
+    }
+
+    // Event listeners for screens below 1024px
+    if (window.matchMedia('(max-width: 1024px)').matches) {
+        buttons.forEach(button => {
+            button.addEventListener('click', () => showBoxContent(button));
+        });
+    }
+
+    // Event listeners for screens above 1024px
+    if (window.matchMedia('(min-width: 1024px)').matches) {
+        buttons.forEach(button => {
+            button.addEventListener('mouseover', () => showBoxContent(button));
+        });
+    }
+});
+</script>
+                                

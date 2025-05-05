@@ -1,0 +1,65 @@
+---
+title: 'About | Siam Thai Spa'
+description: " Discover Siam Thai Spa, founded by Nadia from Udon Thani, Thailand. Our qualified therapists bring authentic Thai healing traditions to Cricklewood, North London. "
+permalink: 'about/'
+eleventyNavigation:
+    key: About Us
+    order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner.jpg" | resize({width: 2560, height: 1136}) | avif %}">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--            Featured Service 1                -->
+<!-- ============================================ -->
+
+<section id="sbs-867">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image -->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/why-us.jpg" | resize({width: 576, height: 800}) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/why-us.jpg" | resize({width: 576, height: 800}) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/why-us.jpg" | resize({width: 576, height: 800}) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image -->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/why-us.jpg" | resize({width: 1100, height: 1433}) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/why-us.jpg" | resize({width: 1100, height: 1433}) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/why-us.jpg" | resize({width: 1100, height: 1433}) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image -->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/why-us.jpg" | resize({width: 1260, height: 1550}) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/why-us.jpg" | resize({width: 1260, height: 1550}) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/why-us.jpg" | resize({width: 1260, height: 1550}) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/why-us.jpg" | resize({width: 1260, height: 1550}) | jpeg %}" alt="massage" width="630" height="775" loading="lazy" decoding="async" aria-hidden="true">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">Our Story</span>
+            <h2 class="cs-title">About Siam Thai Spa</h2>
+            <p class="cs-text">
+                Established in 2019, Siam Thai Spa brings the authentic healing traditions of Thailand to Cricklewood, North West London. Founded by Nadia, a skilled therapist from Udon Thani with over a decade of experience, our spa specialises in genuine Thai massage techniques that effectively address chronic pain and mobility issues. Our commitment to authenticity and therapeutic results has made us a trusted destination for those seeking relief from physical discomfort.
+            </p>
+            <p class="cs-text">
+                At Siam Thai Spa, we blend traditional Thai massage methods with modern therapeutic approaches to deliver exceptional results. Our treatments go beyond simple relaxation—they're designed to target specific issues like neck tension, lower back pain, and restricted mobility. Our fully qualified therapists have trained extensively in Thailand and hold recognised UK accreditations, ensuring every session is both authentic and effective.
+            </p>
+            <p class="cs-text">
+                What truly sets us apart is our personalised approach to treatment. We carefully listen to each client's concerns and tailor every massage to address specific needs rather than offering generic sessions. This client-centred philosophy, combined with our peaceful treatment environment and exceptional attention to detail, creates a healing experience that consistently exceeds expectations. Our numerous positive reviews reflect the immediate improvements our clients experience after just one session.
+            </p>
+            <div id="quote-827">
+                <span class="cs-quote-text">
+                    My greatest satisfaction comes from seeing clients arrive with pain and leave feeling renewed. This is why I founded Siam Thai Spa.
+                </span>
+                <span class="cs-name">Nadia</span>
+                <span class="cs-job">Owner</span>
+                <img class="cs-quote-icon" loading="lazy" decoding="async" src="/assets/svgs/quote-white.svg" alt="quote icon" width="136" height="77">
+            </div>                        
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

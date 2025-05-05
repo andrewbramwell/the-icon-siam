@@ -1,0 +1,35 @@
+<!-- ============================================ -->
+<!--                  Subscribe                   -->
+<!-- ============================================ -->
+
+<section id="subscribe-1718">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Subscribe Us</span>
+            <h2 class="cs-title">Subscribe Your Email for Newsletter & Promotion</h2>
+            <p class="cs-text">
+                Nulla dig nissimmi quis neque interdum. An Ohio man allegedly punched his lawyer in the face in court Tuesday upon finding out he was sentenced.
+            </p>
+           <a href="{{client.onlineBooking}}" target="_blank" rel="noopener" class="cs-button-solid">Book Now</a>
+            <!--Graphic-->
+            <img class="cs-floater" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-spiral.svg" alt="graphic" width="1920" height="486" aria-hidden="true">
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image -->
+        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 640, height: 640}) | avif %}" type="image/avif">
+        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 640, height: 640}) | webp %}" type="image/webp">
+        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 640, height: 640}) | jpeg %}" type="image/jpeg">
+        <!--Tablet Image -->
+        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1024, height: 1006}) | avif %}" type="image/avif">
+        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1024, height: 1006}) | webp %}" type="image/webp">
+        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1024, height: 1006}) | jpeg %}" type="image/jpeg">
+        <!--Desktop Image -->
+        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1920, height: 1104}) | avif %}" type="image/avif">
+        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1920, height: 1104}) | webp %}" type="image/webp">
+        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1920, height: 1104}) | jpeg %}" type="image/jpeg">
+        <img src="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1920, height: 1104}) | jpeg %}" alt="cta image" width="1920" height="486" loading="lazy" decoding="async" aria-hidden="true">
+    </picture>
+</section>
+                                
