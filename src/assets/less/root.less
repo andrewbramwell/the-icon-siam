@@ -7,9 +7,9 @@
 @media only screen and (min-width: 0rem) {
     // Website colors
     :root {
-        --primary: #03423D;
+        --primary: #C4AB69;
         --primaryLight: #C4AB69;
-        --secondary: #C4AB69;
+        --secondary: #452C1F;
         --secondaryLight: #AF375E;
         --headerColor: #1a1a1a;
         --bodyTextColor: #4e4b66;
@@ -34,7 +34,7 @@
         font-size: var(--topperFontSize);
         line-height: 1.2em;
         font-weight: 700;
-        color: var(--secondary);
+        color: var(--primary);
         text-align: inherit;
     }
 
@@ -76,13 +76,15 @@
         z-index: 1;
         /* prevents padding from adding to the width */
         box-sizing: border-box;
+        text-transform: uppercase;
+
 
         &:before {
             content: "";
             position: absolute;
             height: 100%;
             width: 0%;
-            background: var(--secondary);
+            background: #9D8854;
             opacity: 1;
             top: 0;
             left: 0;
@@ -120,7 +122,7 @@
         margin: 0;
         overflow-x: hidden;
         padding: 0;
-        font-family: "Nunito Sans", Arial, sans-serif;
+        font-family: "Jost", Arial, sans-serif;
         font-size: 100%;
         color: var(--bodyTextColor);
     }
@@ -150,14 +152,14 @@
     h6 {
         margin: 0;
         color: var(--headerColor);
-        font-family: "Italiana", Arial, sans-serif;
+        
     }
 
     h1,
     h2 {
         margin: 0;
         color: var(--headerColor);
-        font-family: "Italiana", Arial, sans-serif;
+        
         
     }
 
@@ -167,7 +169,8 @@
         margin: 0;
         font-size: (16/16rem);
         line-height: 1.5em;
-        font-family: "nunito sans", Arial, sans-serif;
+        font-family: "jost", Arial, sans-serif;
+        
     }
 
     p,
@@ -191,38 +194,21 @@
         opacity: 0;
     }
     // Grab your fonts to locally host from https://google-webfonts-helper.herokuapp.com/fonts
-
-    /* nunito-sans-regular - latin */
+   /* jost-regular - latin */
     @font-face {
-        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-        font-family: 'Nunito Sans';
-        font-style: normal;
-        font-weight: 400;
-        src: url('/assets/fonts/nunito-sans-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/jost-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
     }
-    /* nunito-sans-500 - latin */
+    /* jost-700 - latin */
     @font-face {
-        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-        font-family: 'Nunito Sans';
-        font-style: normal;
-        font-weight: 500;
-        src: url('/assets/fonts/nunito-sans-v15-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-    }
-    /* nunito-sans-700 - latin */
-    @font-face {
-        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-        font-family: 'Nunito Sans';
-        font-style: normal;
-        font-weight: 700;
-        src: url('/assets/fonts/nunito-sans-v15-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-    }
-    /* italiana-regular - latin */
-    @font-face {
-        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-        font-family: 'Italiana';
-        font-style: normal;
-        font-weight: 400;
-        src: url('/assets/fonts/italiana-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/assets/fonts/jost-v18-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
     }
     
 }
@@ -1041,7 +1027,7 @@
             margin: 0;
             color: var(--bodyTextColorWhite);
             position: relative;
-            font-family: Italiana;
+            font-family: Jost;
         }
 
         .cs-breadcrumbs {
@@ -1082,7 +1068,7 @@
             }
 
             &.cs-active {
-                color: var(--secondary);
+                color: var(--primary);
             }
         }
 
@@ -1100,7 +1086,7 @@
                 content: "";
                 width: 100%;
                 height: 100%;
-                background: var(--primary);
+                background: var(--secondary);
                 opacity: 0.4;
                 position: absolute;
                 display: block;
@@ -1272,7 +1258,7 @@
         padding: var(--sectionPadding);
         /* 30px - 50px */
         padding-bottom: clamp(1.875rem, 5vw, 3.125rem);
-        background-color: var(--primary);
+        background-color: var(--secondary);
         position: relative;
 
         .cs-wave {
@@ -1359,7 +1345,7 @@
             color: var(--bodyTextColorWhite);
             display: block;
             position: relative;
-            font-family: Italiana;
+            font-family: Jost;
         }
 
         .cs-ul {
@@ -1457,7 +1443,7 @@
             color: var(--primaryLight);
             display: inline-block;
             position: relative;
-            font-family: Italiana;
+            font-family: Jost;
 
             &:hover {
                 color: var(--primaryLight);

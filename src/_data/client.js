@@ -1,24 +1,24 @@
 module.exports = {
-    "name": "Siam Thai Spa",
-    "email": "siamthaispacricklewood@gmail.com",
-    "phoneForTel": "+442084522690",
-    "phoneFormatted": "020 8452 2690",
-    "openingHours": "Mon-Sun: 11am-10pm",
-    "onlineBooking": "https://siamthaispa.setmore.com/",
+    "name": "The Icon Siam",
+    "email": "theiconsiammassage@gmail.com",
+    "phoneForTel": "+441707246616",
+    "phoneFormatted": "01707 246 616",
+    "openingHours": "Mon-Sun: 10am-8pm",
+    "onlineBooking": "https://theiconsiam.setmore.com/",
     "address": {
-        "lineOne": "85 Cricklewood Broadway",
-        "lineTwo": "",
-        "city": "London ",
+        "lineOne": "10 Mutton Lane",
+        "lineTwo": "Potters Bar",
+        "city": "Hertfordshire",
         "state": "",
-        "zip": "NW2 3JG",
+        "zip": "EN6 2PA",
         "country": "UK",
-        "mapLink": "https://maps.app.goo.gl/jyWHrBTgUTo8nPyY8"
+        "mapLink": ""
     },
     "socials": {
         "facebook": "https://www.facebook.com/",
         "instagram": "https://www.instagram.com/",
-        "googleReview": "https://g.page/r/Cbpf3E0ziVD4EBM/review",
+        "googleReview": "",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-    "domain": "https://siamthaispacricklewood.co.uk"
+    "domain": "https://theiconsiammassage.co.uk"
 };

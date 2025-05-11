@@ -151,7 +151,7 @@
   #pricing-r-995 .cs-price {
     font-size: 1rem;
     line-height: 1.5em;
-    font-family: nunito sans;
+    font-family: jost;
     font-weight: 400;
     padding-left: 0.5rem;
     background-color: #fff;
@@ -253,10 +253,10 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #pricing-r-995 {
-    background-color: #061A28;
+    background-color: var(--darker);
   }
   body.dark-mode #pricing-r-995 .cs-header,
   body.dark-mode #pricing-r-995 .cs-price {
-    background-color: #061A28;
+    background-color: var(--darker);
   }
 }
