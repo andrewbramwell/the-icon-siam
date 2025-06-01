@@ -12,12 +12,12 @@ module.exports = {
         "state": "",
         "zip": "EN6 2PA",
         "country": "UK",
-        "mapLink": ""
+        "mapLink": "https://maps.app.goo.gl/c7sAnUSzcowjUqZW6"
     },
     "socials": {
         "facebook": "https://www.facebook.com/",
         "instagram": "https://www.instagram.com/",
-        "googleReview": "",
+        "googleReview": "https://g.page/r/CYFHCfw33mDGEBM/review",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
     "domain": "https://theiconsiammassage.co.uk"
