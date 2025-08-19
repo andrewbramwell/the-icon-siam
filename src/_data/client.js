@@ -3,7 +3,7 @@ module.exports = {
     "email": "theiconsiammassage@gmail.com",
     "phoneForTel": "+441707246616",
     "phoneFormatted": "01707 246 616",
-    "openingHours": "Mon-Sun: 10am-8pm",
+    "openingHours": "Wed-Mon: 10am-9.30pm, Tue: 10am-8pm",
     "onlineBooking": "https://theiconsiam.setmore.com/",
     "address": {
         "lineOne": "10 Mutton Lane",
